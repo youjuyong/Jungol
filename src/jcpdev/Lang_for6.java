@@ -8,6 +8,8 @@ public class Lang_for6 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		//입력된 휴대전화 번호 뒤에 4자리를 '*'로 변경하시오.
+		//ex.01029663366 -> 0102966****(단, 11자리 숫자가 아니어도 상관없다.)
 		
 		Scanner scan = new Scanner(System.in);
 		String str = scan.nextLine();
