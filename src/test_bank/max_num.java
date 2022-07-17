@@ -11,6 +11,7 @@ public class max_num {
 		// 첫 째 줄부터 아홉 번째 줄까지 한 줄에 하나의 자연수가 주어진다. 주어지는 자연수는 100 보다 작다.
 		
 		Scanner sc = new Scanner(System.in);
+		
 		int max = 0;
 		
 		int[] max_num = new int[9]; 
@@ -22,14 +23,14 @@ public class max_num {
 			 num = sc.nextInt(); 
 			 max_num[i] = num;
 			 
-			 if(num >=100) {
+			 if(num >=100) { // 100미만의 숫자 입력시 종료.
 				 System.out.println("100보다 작은수를 입력해주세요.");
 				 break;
 			 }
-			 if(i==0) {
+			 if(i==0) { // 첫번째 입력숫자를 최댓값으로 
 				 max = max_num[i];
 				 leg = 0;
-			 }else {
+			 }else { // 두번째 입력 숫자를 첫번째 숫자와 비교후 최댓값 설정
 				 for(int n=1;n<size;n++) {
 					 if(max_num[n]>max) {
 						 max = max_num[n];
@@ -39,7 +40,7 @@ public class max_num {
 			 }		 
 					 
 		}
-		
+
 		System.out.println("최댓값 : " + max);
 		System.out.println(leg + " 번째값 " + max +" 가 최댓값입니다  ");
 		
